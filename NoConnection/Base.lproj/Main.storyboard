@@ -1,26 +1,142 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tMm-tw-Gf4">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NoConnection" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2S-aN-Owh">
+                                <frame key="frameInset" minX="91" minY="497" width="138" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Animate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="animteButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MmX-XT-66S"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r3X-9N-i7N">
+                                <frame key="frameInset" minX="60" minY="184" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DRx-fh-RmF">
+                                <frame key="frameInset" minX="150" minY="383" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oUH-bL-xFG">
+                                <frame key="frameInset" minX="150" minY="135" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="circleView" destination="r3X-9N-i7N" id="enW-iv-8eV"/>
+                        <outlet property="cycle" destination="DRx-fh-RmF" id="sXz-3g-qwo"/>
+                        <outlet property="satelliteView" destination="oUH-bL-xFG" id="KgU-jd-d42"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-152.80000000000001" y="125.4872563718141"/>
+        </scene>
+        <!--New View Controller-->
+        <scene sceneID="X0S-hM-Wc3">
+            <objects>
+                <viewController id="tMm-tw-Gf4" customClass="NewViewController" customModule="NoConnection" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="haz-MQ-NBS"/>
+                        <viewControllerLayoutGuide type="bottom" id="oZj-21-Ahj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ycx-wZ-MSd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no-internet copy" translatesAutoresizingMaskIntoConstraints="NO" id="9We-aT-VwJ"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="globe" translatesAutoresizingMaskIntoConstraints="NO" id="YvL-ro-UsK">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="fDT-N6-PVY"/>
+                                    <constraint firstAttribute="width" constant="125" id="rue-To-1GH"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cycle" translatesAutoresizingMaskIntoConstraints="NO" id="Dj9-Rz-hti">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="KiB-g9-iHu"/>
+                                    <constraint firstAttribute="width" constant="38" id="ogN-vT-DFh"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="modern-satellite" translatesAutoresizingMaskIntoConstraints="NO" id="PMl-gE-e6C">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="JLz-wD-oju"/>
+                                    <constraint firstAttribute="width" constant="38" id="Yty-Zn-3Eh"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFP-Si-tOT">
+                                <frame key="frameInset" minX="117" minY="518" width="86" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Animate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startAnimatinoHere:" destination="tMm-tw-Gf4" eventType="touchUpInside" id="f6a-dz-cXB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7DW-eO-wkj">
+                                <string key="text">NO GPS!
+satellite can’t find you                       </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PMl-gE-e6C" firstAttribute="top" secondItem="YvL-ro-UsK" secondAttribute="bottom" constant="10" id="4rW-Gg-nJC"/>
+                            <constraint firstItem="7DW-eO-wkj" firstAttribute="top" secondItem="9We-aT-VwJ" secondAttribute="bottom" constant="-139" id="5Pe-nN-qNn"/>
+                            <constraint firstItem="9We-aT-VwJ" firstAttribute="leading" secondItem="ycx-wZ-MSd" secondAttribute="leading" id="7Hc-BS-RB0"/>
+                            <constraint firstItem="YvL-ro-UsK" firstAttribute="centerX" secondItem="ycx-wZ-MSd" secondAttribute="centerX" id="KuI-dH-Z5x"/>
+                            <constraint firstItem="7DW-eO-wkj" firstAttribute="centerX" secondItem="ycx-wZ-MSd" secondAttribute="centerX" id="dYS-Tq-9Jy"/>
+                            <constraint firstAttribute="trailing" secondItem="9We-aT-VwJ" secondAttribute="trailing" id="eBb-83-haP"/>
+                            <constraint firstItem="oZj-21-Ahj" firstAttribute="top" secondItem="9We-aT-VwJ" secondAttribute="bottom" id="hhs-vy-ZgW"/>
+                            <constraint firstItem="YvL-ro-UsK" firstAttribute="centerY" secondItem="ycx-wZ-MSd" secondAttribute="centerY" id="nAu-Uq-6vo"/>
+                            <constraint firstItem="PMl-gE-e6C" firstAttribute="centerX" secondItem="ycx-wZ-MSd" secondAttribute="centerX" id="pde-WV-l6Z"/>
+                            <constraint firstItem="Dj9-Rz-hti" firstAttribute="centerX" secondItem="ycx-wZ-MSd" secondAttribute="centerX" id="qUh-Tr-B1S"/>
+                            <constraint firstItem="9We-aT-VwJ" firstAttribute="top" secondItem="ycx-wZ-MSd" secondAttribute="top" id="vad-b7-MhO"/>
+                            <constraint firstItem="YvL-ro-UsK" firstAttribute="top" secondItem="Dj9-Rz-hti" secondAttribute="bottom" constant="-1" id="w1S-oG-qEH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cycle" destination="Dj9-Rz-hti" id="YcX-Xh-ku7"/>
+                        <outlet property="globe" destination="YvL-ro-UsK" id="APw-zb-jpq"/>
+                        <outlet property="satellite" destination="PMl-gE-e6C" id="KUG-Z4-Ue0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2dq-aO-U3B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="549.375" y="124.64788732394366"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cycle" width="151" height="89"/>
+        <image name="globe" width="250" height="250"/>
+        <image name="modern-satellite" width="94" height="76"/>
+        <image name="no-internet copy" width="640" height="1136"/>
+    </resources>
 </document>
